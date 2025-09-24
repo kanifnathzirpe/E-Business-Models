@@ -22,6 +22,26 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        // Business model specific colors
+        b2b: {
+          primary: "hsl(var(--b2b-primary))",
+          secondary: "hsl(var(--b2b-secondary))",
+          accent: "hsl(var(--b2b-accent))",
+          foreground: "hsl(var(--b2b-foreground))",
+        },
+        b2c: {
+          primary: "hsl(var(--b2c-primary))",
+          secondary: "hsl(var(--b2c-secondary))",
+          accent: "hsl(var(--b2c-accent))",
+          foreground: "hsl(var(--b2c-foreground))",
+        },
+        c2c: {
+          primary: "hsl(var(--c2c-primary))",
+          secondary: "hsl(var(--c2c-secondary))",
+          accent: "hsl(var(--c2c-accent))",
+          foreground: "hsl(var(--c2c-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

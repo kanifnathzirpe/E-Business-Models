@@ -9,12 +9,20 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-all duration-300",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Business model specific variants
+        hero: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold",
+        b2b: "bg-b2b-primary text-b2b-foreground hover:bg-b2b-secondary transition-all duration-300 shadow-md",
+        b2c: "bg-b2c-primary text-b2c-foreground hover:bg-b2c-secondary transition-all duration-300 shadow-md",
+        c2c: "bg-c2c-primary text-c2c-foreground hover:bg-c2c-secondary transition-all duration-300 shadow-md",
+        "b2b-outline": "border-2 border-b2b-primary text-b2b-primary hover:bg-b2b-primary hover:text-b2b-foreground transition-all duration-300",
+        "b2c-outline": "border-2 border-b2c-primary text-b2c-primary hover:bg-b2c-primary hover:text-b2c-foreground transition-all duration-300",
+        "c2c-outline": "border-2 border-c2c-primary text-c2c-primary hover:bg-c2c-primary hover:text-c2c-foreground transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
